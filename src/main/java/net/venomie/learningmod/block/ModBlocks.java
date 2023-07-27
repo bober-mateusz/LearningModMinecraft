@@ -23,6 +23,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> RED_ZIRCON_BLOCK = registerBlock("red_zircon_block",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2,6)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name,block);
         registerBlockItem(name, toReturn);
