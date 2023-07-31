@@ -24,6 +24,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         oreSmelting(consumer, List.of(ModItems.ZIRCON.get()), RecipeCategory.MISC,ModItems.RUBY.get(),0.7f,200,"zircon");
+        oreBlasting(consumer, List.of(ModItems.ZIRCON.get()), RecipeCategory.MISC,ModItems.RUBY.get(),0.7f,200,"zircon");
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> p_250654_, List<ItemLike> p_250172_, RecipeCategory p_250588_, ItemLike p_251868_, float p_250789_, int p_252144_, String p_251687_) {
