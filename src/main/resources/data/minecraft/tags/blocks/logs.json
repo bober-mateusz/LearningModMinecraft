@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "learningmod:ebony_log",
+    "learningmod:ebony_wood",
+    "learningmod:stripped_ebony_log",
+    "learningmod:stripped_ebony_wood"
+  ]
+}

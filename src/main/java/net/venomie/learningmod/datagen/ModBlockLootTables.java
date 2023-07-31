@@ -20,6 +20,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         add(ModBlocks.RED_ZIRCON_BLOCK.get(),
                 (block) -> createOreDrop(ModBlocks.RED_ZIRCON_BLOCK.get(), ModItems.ZIRCON.get()));
+
+        this.dropSelf(ModBlocks.EBONY_LOG.get());
+        this.dropSelf(ModBlocks.EBONY_WOOD.get());
+        this.dropSelf(ModBlocks.EBONY_PLANKS.get());
+        this.dropSelf(ModBlocks.STRIPPED_EBONY_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_EBONY_LOG.get());
+        this.dropSelf(ModBlocks.EBONY_SAPLING.get());
+
+        this.add(ModBlocks.EBONY_LEAVES.get(), (block ->
+                createLeavesDrops(block,ModBlocks.EBONY_SAPLING.get(),NORMAL_LEAVES_SAPLING_CHANCES)));
+
     }
 
     @Override
